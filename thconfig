@@ -1,0 +1,24 @@
+encoding  utf-8
+language ru
+
+source sliz.th
+
+select m1p@sliz
+select m1s@sliz
+
+layout normal
+     symbol-set BCRA
+     scale 1 200
+     doc-author "Paweł Krawczyk"
+     doc-title "Слизняки"
+     statistics explo all  
+     statistics topo all
+     statistics carto all
+     statistics copyright all
+     legend on
+     map-comment "Сары Тала"
+     colour map-fg altitude
+endlayout
+
+export map -format pdf -layout normal -o cave.pdf
+export map -format svg -layout normal -o cave.svg
