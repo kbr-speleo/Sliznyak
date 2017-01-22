@@ -1,3 +1,4 @@
+encoding  utf-8
 # 2017.01.06 created by TopoDroid v 3.3.0
 
 survey sliz -title "Слизняк"
@@ -6,7 +7,8 @@ survey sliz -title "Слизняк"
     cs long-lat
     fix 0 43.391417 43.346944 1522
     date 2017.01.05 
-    #team Владимир Влазнев, Павел Кравчик 
+    team "Владимир Влазнев" instruments
+    team "Павел Кравчик " instruments
     # declination 0.00 degrees
     units length meters
     units compass clino degrees
@@ -172,3 +174,4 @@ survey sliz -title "Слизняк"
   endmap
 
 endsurvey
+
