@@ -5,7 +5,6 @@ source sliz.th
 
 layout normal
      symbol-set BCRA
-     #scale 1 200
      doc-author "Paweł Krawczyk"
      doc-title "Слизняки"
      statistics explo all  
@@ -28,3 +27,4 @@ export map -format svg -projection extended -layout normal -o sliznyak-sect.svg
 
 export map -format pdf -layout normal -o sliznyak-plan.pdf 
 export map -format svg -layout normal -o sliznyak-plan.svg
+export map -format kml -layout normal -o sliznyak-plan.kml
