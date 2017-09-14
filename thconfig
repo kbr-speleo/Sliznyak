@@ -4,27 +4,28 @@ language ru
 source sliz.th
 
 layout normal
-     symbol-set BCRA
      doc-author "Paweł Krawczyk"
-     doc-title "Слизняки"
+     doc-title "Пещера Слизней"
      statistics explo all  
      statistics topo all
      statistics carto all
      statistics copyright all
      legend on
      map-comment "Сары Тала"
-     colour map-fg altitude
-     symbol-hide group cave-centreline
+     symbol-hide group cave-centerline
+    symbol-show group text
+    symbol-show point cave-station
+    map-comment "https://github.com/kbr-speleo/Sliznyak"
 endlayout
 
-select m1s@sliz
+export model -output model.kml
+export model
+export model -format survex
+
 select m1p@sliz
 
-
 export map -format pdf -projection extended -layout normal -o sliznyak-sect.pdf 
-export map -format svg -projection extended -layout normal -o sliznyak-sect.svg
 
+select m1s@sliz
 
-export map -format pdf -layout normal -o sliznyak-plan.pdf 
-export map -format svg -layout normal -o sliznyak-plan.svg
-export map -format kml -layout normal -o sliznyak-plan.kml
+export map -format pdf -layout normal -o sliznyak-plan.pdf
