@@ -4,6 +4,7 @@ language ru
 source sliz.th
 
 layout normal
+     symbol-set AUT
      doc-author "Paweł Krawczyk"
      doc-title "Пещера Слизней"
      statistics explo all  
@@ -13,9 +14,10 @@ layout normal
      legend on
      map-comment "Сары Тала"
      symbol-hide group cave-centerline
-    symbol-show group text
-    symbol-show point cave-station
-    map-comment "https://github.com/kbr-speleo/Sliznyak"
+     color map-fg 80
+     symbol-show group text
+     symbol-hide point cave-station
+     map-comment "https://github.com/kbr-speleo/Sliznyak"
 endlayout
 
 export model -output model.kml

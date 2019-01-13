@@ -9,7 +9,9 @@ survey sliz -title "Пещера Слизней"
     date 2017.01.05 
     team "Владимир Влазнев" instruments
     team "Павел Кравчик " instruments
-    # declination 0.00 degrees
+    station 0 "Вход" entrance
+    station 14 "правый коллектор" continuation explored 10m
+    station 14 "левый коллектор" continuation explored 10m
     units length meters
     units compass clino degrees
     data normal from to length compass clino
